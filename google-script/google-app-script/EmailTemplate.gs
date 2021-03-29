@@ -188,7 +188,7 @@ function getEmails(){
     messages.get
       for(var i = 0; i < threads.length; i++)
     {
-       fromEmails.push(messages[i][0].getFrom().split("<")[1].replace(">",""));
+       fromEmails.push(messages[i][0].getFrom().split("<")[1]);
     }
     console.log(fromEmails);
   return fromEmails;
